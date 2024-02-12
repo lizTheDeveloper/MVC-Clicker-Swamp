@@ -32,6 +32,22 @@ class Population {
     }
 }
 
+class Resource {
+    constructor(name, quantity) {
+        this.name = name;
+        this.quantity = quantity;
+    }
+
+    render() {
+        return `
+<div class="resource">
+    <h2>${this.name}</h2>
+    <p>Quantity: ${this.quantity}</p>
+</div>
+        `;
+    }
+}
+
 
 // Population Item
     // Modifies the population of a given species by some factor- either growth, or predation
